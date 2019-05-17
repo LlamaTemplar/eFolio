@@ -35,6 +35,16 @@ canvas
 
 }
 
+.subheader
+{
+  background-color: #2b3139;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 2px;
+  border-top: 2px solid black;
+}
+
 .container
 {
   max-width: 640px;
@@ -52,7 +62,7 @@ canvas
   position: absolute;
 }
 
-.bodyheader,.links
+.bodyheader,.links, .sublinks
 {
   overflow: hidden; /*hide content that doesn't fit*/
   position: relative; /* stays with the flow of doc */
@@ -66,13 +76,24 @@ canvas
   margin: 0 60px; /*not working? */
   color: white;
 }
+.sublinks
+{
+  line-height: 10px;
+  display: block;
+  padding: 10px;
+  margin: 0 60px; /*not working? */
+  color: white;
 
-.links > ul
+
+}
+
+
+.links > ul, .sublinks > ul
 {
   display: flex;
 }
 
-.links > ul li
+.links > ul li, .sublinks > ul li
 {
   font-size: 18px;
   font-weight: bold;
@@ -92,6 +113,7 @@ a {
     color: inherit; /* get color from parent */
     text-decoration: none; /* remove underline */
 }
+
 
 .content
 {
@@ -194,4 +216,14 @@ a {
   left:0;
   width:100%;
   height:100%;
+}
+
+.divcanvas
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
 }
