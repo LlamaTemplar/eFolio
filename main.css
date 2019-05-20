@@ -137,10 +137,11 @@ a {
 
 .description p
 {
-  width: 50%;
+  width: 80%;
+  text-align: left;
   margin: 0 auto 10px auto;
   line-height:20px;
-  font-size: 15px;
+  font-size: 18px;
 
 }
 
